@@ -78,3 +78,80 @@ footer small{color:#c6a775}
 .invitation-location{font-size:13px;line-height:2;letter-spacing:1.5px;margin:35px 0 20px}
 .invitation-explore{display:inline-block;margin-top:16px;border-bottom:1px solid #b49a6c;padding-bottom:9px;color:#705a35;font-size:11px;letter-spacing:2px}
 @media(max-width:700px){.nav{height:65px;justify-content:space-between;gap:12px}.nav .monogram{font-size:11px}.nav .menu{color:#fff}.nav nav{background:#080808;top:65px}.nav nav a{color:#fff}.invitation-hero{padding:0 10px 45px}.invitation-paper{padding:0 14px 55px}.invitation-floral{height:175px;margin-bottom:20px}.invitation-floral span{font-size:125px}.invitation-floral span:nth-child(2){font-size:145px}.invitation-overline{font-size:10px;letter-spacing:2px}.invitation-parents{gap:24px;font-size:11px;letter-spacing:.3px}.invitation-we{font-size:11px}.invitation-names{font-size:clamp(45px,10vw,70px)}.invitation-request{font-size:10px;letter-spacing:1.6px;line-height:1.8;margin-bottom:32px}.invitation-weekday{font-size:15px;letter-spacing:4px}.invitation-date-row{gap:12px}.invitation-date-row span{min-width:0;padding:10px 8px;font-size:11px;letter-spacing:2px}.invitation-date-row strong{font-size:50px}.invitation-date>p{font-size:11px;letter-spacing:2px}.invitation-location{font-size:11px}}
+
+
+/* Consistent invitation-paper styling throughout the website */
+:root{color:#171614;background:#f6f5f1}
+body{background:#f6f5f1;color:#171614}
+main{background:#f6f5f1}
+main .section{position:relative;background:#f6f5f1;color:#171614;border-top:1px solid #e6ded0}
+main .section:not(.rsvp){background-image:radial-gradient(ellipse at 50% 10%,#fff 0%,#f7f6f2 70%,#f1eee8 100%)}
+main .section:not(.rsvp)::before{content:'❦';display:block;font-family:Georgia,serif;font-size:36px;line-height:1;color:#b49a6c;opacity:.75;margin:0 auto 18px;pointer-events:none}
+main .section h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;color:#171614}
+main .section h3{color:#171614}
+main .section .eyebrow{color:#9b7c4b;letter-spacing:3px}
+main .section .section-lead,main .intro p,main .rsvp-panel>p{color:#524a42}
+main .section .flourish,main .section .heart{color:#a88b5c}
+main .countdown{background:#f6f5f1}
+main .digits strong{color:#171614}
+main .digits small{color:#806947}
+main .venue-grid{gap:28px}
+main .venue{background:#fffdfa;border:1px solid #d6c4a5;box-shadow:0 8px 28px #2a20100a}
+main .venue .venue-symbol,main .venue .eyebrow{color:#a88b5c}
+main .venue strong{color:#171614}
+main .venue p{color:#63594d}
+main .venue .text-link{color:#80643b}
+main .venue iframe{filter:grayscale(.55)}
+main .timeline{background:#f6f5f1}
+main .timeline-item time{color:#896d44}
+main .timeline-item .dot{background:#aa8c5c}
+main .timeline-item:not(:last-child) .dot:after{background:#d1c09f}
+main .timeline-item h3{color:#171614}
+main .timeline-item p{color:#665c50}
+main .photo{background:#eee8de;border:1px solid #d6c4a5}
+main .photo:before{color:#bca77f}
+main .photo img{filter:none}
+main .photo span{color:#fff;text-shadow:0 1px 6px #000}
+main .photo-note{color:#776b5e}
+main .rsvp{background:#f6f5f1}
+main .rsvp-panel{background:#fffdfa;border:1px solid #cdb68d;box-shadow:0 12px 40px #2a20100d}
+main .rsvp-panel h2{color:#171614}
+main .rsvp label{color:#80643b}
+main .rsvp input,main .rsvp select,main .rsvp textarea{background:#fff;color:#171614;border:1px solid #d4c6b0;color-scheme:light}
+main .rsvp input::placeholder,main .rsvp textarea::placeholder{color:#847d73}
+main .rsvp input:focus,main .rsvp select:focus,main .rsvp textarea:focus{outline:2px solid #b99b6d;outline-offset:1px;border-color:#b99b6d}
+main .form-status{color:#625039}
+main .btn.gold{background:#171614;color:#fff9ed;border:1px solid #b99b6d}
+main .btn.gold:hover{background:#413524}
+footer{background:#080808;color:#f6f5f1;border-top:2px solid #b99b6d}
+footer .flourish,footer small{color:#c6a775}
+@media(max-width:700px){main .section{padding:75px 20px}main .rsvp-panel{padding:45px 22px}}
+
+/* Entourage and Q&A — matching invitation styling */
+.entourage,.qa{background:#faf8f4;color:#171614}
+.entourage-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;max-width:880px;margin:45px auto 20px}
+.entourage-card{background:#fffdfa;border:1px solid #d6c4a5;padding:35px 24px;min-height:150px}
+.entourage-card h3{font-size:clamp(24px,3vw,33px);margin:0 0 18px;color:#171614}
+.entourage-card p{font-size:14px;color:#665c50;margin:0 0 9px}
+.entourage-note{font-size:12px;color:#7c7062}
+.qa-list{max-width:790px;margin:42px auto 0;text-align:left;border-top:1px solid #d6c4a5}
+.qa-list details{border-bottom:1px solid #d6c4a5;padding:21px 12px}
+.qa-list summary{font-family:'Cormorant Garamond',serif;font-size:clamp(22px,3vw,28px);cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#171614}
+.qa-list summary::-webkit-details-marker{display:none}
+.qa-list summary:after{content:'+';font-family:serif;font-size:24px;color:#a88b5c}
+.qa-list details[open] summary:after{content:'−'}
+.qa-list p{font-size:15px;line-height:1.7;color:#665c50;margin:14px 0 0}
+@media(max-width:700px){.entourage-grid{grid-template-columns:1fr;gap:14px}.entourage-card{padding:25px 18px;min-height:0}.qa-list details{padding:18px 4px}}
+
+/* Separate invitation-style pages inspired by reference website */
+.wix-pages{min-height:70vh;background:#f8f6f1;color:#191714}
+.wix-page{min-height:80vh;padding-top:125px;padding-bottom:110px;background:#f8f6f1}
+.wix-entourage-list{max-width:800px;margin:42px auto 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:42px 55px}
+.wix-entourage-group h3{font-family:'Cormorant Garamond',serif;font-size:31px;margin:0 0 13px;color:#1d1b19}
+.wix-entourage-group p{font-family:'Cormorant Garamond',serif;font-size:22px;margin:5px 0;color:#33302b}
+.wix-qa-list{max-width:770px;margin:50px auto 0;text-align:left}
+.wix-qa-item{padding:25px 0;border-bottom:1px solid #d7c6a8}
+.wix-qa-item h3{font-family:'Cormorant Garamond',serif;font-size:28px;margin:0 0 10px;color:#1d1b19}
+.wix-qa-item p{font-size:15px;line-height:1.8;color:#4b453e;margin:0}
+.wix-page.gallery .photos{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1000px}
+@media(max-width:700px){.wix-page{padding-top:100px}.wix-entourage-list{grid-template-columns:1fr;gap:25px}.wix-page.gallery .photos{grid-template-columns:repeat(2,minmax(0,1fr))}}
