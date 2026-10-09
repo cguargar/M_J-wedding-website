@@ -55,13 +55,27 @@ function App(){
    <h2 id="attire-heading">Attire</h2>
    <div className="flourish">❦</div>
    <p className="details-feature-subtitle">STRICTLY FORMAL</p>
-   <div className="attire-grid">
-     <article className="attire-card"><div className="attire-symbol">♢</div><h3>Gentlemen</h3><p>Barong / Suit / Long Sleeves</p></article>
-     <article className="attire-card"><div className="attire-symbol">♢</div><h3>Ladies</h3><p>Long Gown</p></article>
+   <div className="attire-reference-layout">
+     <img className="attire-reference-photo" src="/attire-reference.png" alt="Formal attire inspiration showing a gentleman in an olive green shirt, a lady in a burnt orange gown, a gentleman in a cream barong, and a lady in a burgundy gown" loading="lazy" />
+     <div className="attire-reference-info">
+       <p><strong>Gentlemen:</strong> Barong / Suit / Long Sleeves</p>
+       <p><strong>Ladies:</strong> Long Gown</p>
+       <div className="attire-palette" aria-label="Wedding guest colors: sage green, burnt orange, burgundy"><span title="Sage green" style={{background:'#8B9F74'}}/><span title="Burnt orange" style={{background:'#DF5524'}}/><span title="Burgundy" style={{background:'#94002C'}}/></div>
+       <p className="details-feature-note">We kindly request our guests to wear these colors on our special day.</p>
+     </div>
    </div>
-   <p className="details-feature-note">We kindly request our guests to dress formally for our special day.</p>
-   <div className="attire-palette" aria-label="Champagne and neutral color inspiration"><span style={{background:'#eee4d4'}}/><span style={{background:'#d8c3a1'}}/><span style={{background:'#bba581'}}/><span style={{background:'#8f806e'}}/><span style={{background:'#5b554d'}}/></div>
-   <p className="details-palette-caption">Suggested neutral tones for visual inspiration. Please confirm the official guest color palette with the couple.</p>
+ </section>
+ <section className="section wedding-guidelines" aria-label="Wedding guest reminders">
+   <article className="wedding-guideline">
+     <div className="guideline-icon" aria-hidden="true">♧</div>
+     <h2>Note on Gifts</h2>
+     <p>Your presence is the greatest gift we could ask for. However, if you wish to honor us with a gift, we would greatly appreciate a monetary token as we reside in Australia.</p>
+   </article>
+   <article className="wedding-guideline">
+     <div className="guideline-icon" aria-hidden="true">▣</div>
+     <h2>Unplugged Ceremony</h2>
+     <p>Please keep our ceremony <strong>CAMERA-FREE.</strong> While our “I Do’s” are unplugged, our reception is not. Once the ceremony is over, feel free to start snapping shots!</p>
+   </article>
  </section>
  <section className="section accommodation-section" aria-labelledby="accommodation-heading">
    <div className="eyebrow">FOR OUR BELOVED GUESTS</div>
