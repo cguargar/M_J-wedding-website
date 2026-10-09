@@ -6,8 +6,8 @@ export const wedding = {
   location: 'Angeles, Pampanga',
   heroMessage: 'A celebration of love, laughter & forever.',
   rsvpDeadline: '2027-12-01',
-  ceremony: { time: '2:30 PM', title: 'The Ceremony', venue: 'Minor Basilica and Parish of Our Lady of the Most Holy Rosary', address: 'Santo Rosario St, Angeles, 2009 Pampanga', mapQuery: 'Angeles, Pampanga' },
-  reception: { time: '5:00 PM', title: 'The Reception', venue: 'Ardesia Resort & Spa', address: 'Jose P Laurel Ave, Margot, Angeles, 2009 Pampanga', mapQuery: 'Angeles Pampanga' },
+  ceremony: { time: '2:30 PM', title: 'The Ceremony', venue: 'Minor Basilica and Parish of Our Lady of the Most Holy Rosary', address: 'Santo Rosario St, Angeles, 2009 Pampanga', mapQuery: 'Santo Rosario St, Angeles, 2009 Pampanga' },
+  reception: { time: '5:00 PM', title: 'The Reception', venue: 'Ardesia Resort & Spa', address: 'Jose P Laurel Ave, Margot, Angeles, 2009 Pampanga', mapQuery: 'Jose P Laurel Ave, Margot, Angeles, 2009 Pampanga' },
   schedule: [
     { time: '2:00 PM', event: 'Guest Arrival', detail: 'Please take your seats' },
     { time: '2:30 PM', event: 'Wedding Ceremony', detail: 'We say “I do”' },
