@@ -46,3 +46,35 @@ footer small{color:#c6a775}
 .music{background:#b99b6d;color:#12100e;border-color:#e0c395;box-shadow:0 4px 22px #0007}
 .lightbox{background:#050506f5}
 @media(max-width:700px){.nav nav{background:#171619;border-bottom:1px solid #65533a}.nav nav a{color:#f4eee5}.hero-border{background:rgba(11,11,13,.6)}}
+
+/* Invitation-style header and front page */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+.nav{position:relative;height:72px;background:#050505;color:#f8f5ef;padding:0 max(24px,7%);justify-content:center;gap:50px;z-index:30}
+.nav .monogram{font-family:'DM Sans',sans-serif;color:#f8f5ef;font-size:12px;white-space:nowrap}
+.nav nav{gap:clamp(18px,3vw,48px);align-items:center}
+.nav nav a{color:#f8f5ef;font-size:11px;letter-spacing:.15px;text-transform:none}
+.nav nav a:hover{color:#c6a775}
+.invitation-hero{background:#f6f5f1;color:#161616;min-height:calc(100svh - 72px);padding:0 24px 75px;display:block;text-align:center}
+.invitation-hero:before,.invitation-hero:after{display:none}
+.invitation-paper{max-width:1080px;margin:0 auto;padding:0 20px 90px;background:radial-gradient(ellipse at 50% 40%,#fff 0%,#f7f6f2 65%,#f1eee8 100%);min-height:calc(100svh - 72px)}
+.invitation-floral{height:310px;max-width:670px;margin:0 auto 12px;display:flex;justify-content:center;align-items:center;gap:0;overflow:hidden;color:#b49a6c;opacity:.82;pointer-events:none}
+.invitation-floral span{font-family:Georgia,serif;font-size:clamp(125px,16vw,230px);line-height:1;display:block;font-weight:400}
+.invitation-floral span:first-child{transform:rotate(-38deg) translate(26px,20px)}
+.invitation-floral span:nth-child(2){transform:rotate(10deg) translateY(-18px);font-size:clamp(130px,17vw,245px)}
+.invitation-floral span:last-child{transform:scaleX(-1) rotate(-38deg) translate(26px,20px)}
+.invitation-overline,.invitation-we,.invitation-request,.invitation-date,.invitation-location{font-family:Georgia,'Times New Roman',serif;letter-spacing:3px}
+.invitation-overline{font-size:14px;margin:0 0 24px;color:#171717}
+.invitation-parents{display:flex;justify-content:center;gap:clamp(50px,11vw,160px);font-family:Georgia,serif;letter-spacing:1px;font-size:16px;line-height:1.85}
+.invitation-parents strong{display:block;font-weight:600}
+.invitation-we{font-size:14px;margin:24px 0 6px}
+.invitation-names{font-family:'Great Vibes','Cormorant Garamond',cursive;font-size:clamp(52px,8vw,104px);line-height:1.2;font-weight:400;margin:8px 0 12px;color:#090909}
+.invitation-names span{font-size:.65em}
+.invitation-request{font-size:13px;margin:8px 0 46px}
+.invitation-weekday{text-transform:uppercase;font-size:20px;font-weight:600;letter-spacing:6px;margin-bottom:16px}
+.invitation-date-row{display:flex;justify-content:center;align-items:center;gap:32px}
+.invitation-date-row span{border-top:2px solid #171717;border-bottom:2px solid #171717;padding:13px 28px;min-width:170px;text-transform:uppercase;font-size:17px;font-weight:600;letter-spacing:5px}
+.invitation-date-row strong{font-size:68px;font-weight:400;line-height:1}
+.invitation-date>p{font-size:16px;font-weight:600;letter-spacing:4px;margin:32px 0 0}
+.invitation-location{font-size:13px;line-height:2;letter-spacing:1.5px;margin:35px 0 20px}
+.invitation-explore{display:inline-block;margin-top:16px;border-bottom:1px solid #b49a6c;padding-bottom:9px;color:#705a35;font-size:11px;letter-spacing:2px}
+@media(max-width:700px){.nav{height:65px;justify-content:space-between;gap:12px}.nav .monogram{font-size:11px}.nav .menu{color:#fff}.nav nav{background:#080808;top:65px}.nav nav a{color:#fff}.invitation-hero{padding:0 10px 45px}.invitation-paper{padding:0 14px 55px}.invitation-floral{height:175px;margin-bottom:20px}.invitation-floral span{font-size:125px}.invitation-floral span:nth-child(2){font-size:145px}.invitation-overline{font-size:10px;letter-spacing:2px}.invitation-parents{gap:24px;font-size:11px;letter-spacing:.3px}.invitation-we{font-size:11px}.invitation-names{font-size:clamp(45px,10vw,70px)}.invitation-request{font-size:10px;letter-spacing:1.6px;line-height:1.8;margin-bottom:32px}.invitation-weekday{font-size:15px;letter-spacing:4px}.invitation-date-row{gap:12px}.invitation-date-row span{min-width:0;padding:10px 8px;font-size:11px;letter-spacing:2px}.invitation-date-row strong{font-size:50px}.invitation-date>p{font-size:11px;letter-spacing:2px}.invitation-location{font-size:11px}}
