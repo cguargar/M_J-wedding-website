@@ -233,3 +233,25 @@ footer small,footer .flourish{color:var(--champagne)!important}
 @keyframes cover-pulse{0%,100%{opacity:.65;transform:translateY(0)}50%{opacity:1;transform:translateY(-5px)}}
 @media(max-width:700px){.invitation-cover::before{inset:12px}.invitation-cover::after{inset:19px}.cover-corner{font-size:90px}.cover-names{font-size:clamp(47px,13vw,78px)}.cover-overline{font-size:9px}.cover-date{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.cover-open{animation:none}}
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600&display=swap');
+
+/* Couple's names */
+.invitation-names,
+.cover-names,
+.hero-names {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
+  color: #e2c38c;
+  font-size: clamp(54px, 10vw, 100px);
+  line-height: 1.4;
+}
+
+/* Wedding date and invitation text */
+.invitation-date,
+.cover-date,
+.tap-to-open {
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 3px;
+  color: #e2c38c;
+}
