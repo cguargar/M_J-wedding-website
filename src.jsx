@@ -50,6 +50,28 @@ function App(){
 ['Principal Sponsors',['Add principal sponsor names']],['Best Man',['Add best man name']],['Matron of Honor',['Add matron of honor name']],['Candle',['Add candle sponsors']],['Veil',['Add veil sponsors']],['Cord',['Add cord sponsors']],['Groomsmen',['Add groomsmen names']],['Bridesmaids',['Add bridesmaids names']],['Coin Bearer',['Add coin bearer name']],['Ring Bearer',['Add ring bearer name']],['Bible Bearer',['Add Bible bearer name']],['Flower Girls',['Add flower girls names']]
 ].map(([heading,names])=><div className="wix-entourage-group" key={heading}><h3>{heading}</h3>{names.map(n=><p key={n}>{n}</p>)}</div>)}</div><p className="entourage-note">Replace placeholders with your confirmed entourage names before publishing.</p></section></div><div style={{display:page==='details'?'block':'none'}}><section className="countdown section"><div className="eyebrow">COUNTING DOWN TO OUR SPECIAL DAY</div><h2>Until We Say “I Do”</h2><div className="digits">{remaining.map((v,i)=><div key={i}><strong>{String(v).padStart(2,'0')}</strong><small>{['DAYS','HOURS','MINUTES','SECONDS'][i]}</small></div>)}</div></section>
  <section className="section details" id="details"><div className="eyebrow">YOU ARE CORDIALLY INVITED</div><h2>The Wedding Day</h2><p className="section-lead">A day filled with love, joy and beautiful memories.</p><div className="venue-grid">{[w.ceremony,w.reception].map((v,i)=><article className="venue" key={i}><div className="venue-symbol">{i?'✧':'✦'}</div><div className="eyebrow">{v.time}</div><h3>{v.title}</h3><strong>{v.venue}</strong><p>{v.address}</p><a className="text-link" href={'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(v.mapQuery)} target="_blank" rel="noreferrer"><MapPin size={16}/> GET DIRECTIONS</a><iframe title={v.title+' map'} loading="lazy" referrerPolicy="no-referrer-when-downgrade" src={'https://maps.google.com/maps?q='+encodeURIComponent(v.mapQuery)+'&output=embed'}/></article>)}</div></section>
+ <section className="section attire-section" aria-labelledby="attire-heading">
+   <div className="eyebrow">DRESS CODE</div>
+   <h2 id="attire-heading">Attire</h2>
+   <div className="flourish">❦</div>
+   <p className="details-feature-subtitle">STRICTLY FORMAL</p>
+   <div className="attire-grid">
+     <article className="attire-card"><div className="attire-symbol">♢</div><h3>Gentlemen</h3><p>Barong / Suit / Long Sleeves</p></article>
+     <article className="attire-card"><div className="attire-symbol">♢</div><h3>Ladies</h3><p>Long Gown</p></article>
+   </div>
+   <p className="details-feature-note">We kindly request our guests to dress formally for our special day.</p>
+   <div className="attire-palette" aria-label="Champagne and neutral color inspiration"><span style={{background:'#eee4d4'}}/><span style={{background:'#d8c3a1'}}/><span style={{background:'#bba581'}}/><span style={{background:'#8f806e'}}/><span style={{background:'#5b554d'}}/></div>
+   <p className="details-palette-caption">Suggested neutral tones for visual inspiration. Please confirm the official guest color palette with the couple.</p>
+ </section>
+ <section className="section accommodation-section" aria-labelledby="accommodation-heading">
+   <div className="eyebrow">FOR OUR BELOVED GUESTS</div>
+   <h2 id="accommodation-heading">Accommodation</h2>
+   <div className="flourish">❦</div>
+   <p className="details-feature-subtitle">STAY A LITTLE LONGER</p>
+   <p className="details-feature-note">For guests planning to stay overnight, we recommend exploring accommodation near the wedding venue. We hope this makes planning your stay a little easier.</p>
+   <a className="accommodation-link" href={'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent('hotels near '+w.reception.mapQuery)} target="_blank" rel="noreferrer">EXPLORE NEARBY HOTELS ↗</a>
+   <p className="details-palette-caption">Specific hotel recommendations and room availability have not yet been confirmed.</p>
+ </section>
  <section className="section timeline"><div className="eyebrow">THE ORDER OF EVENTS</div><h2>Wedding Schedule</h2><div className="timeline-items">{w.schedule.map((s,i)=><div className="timeline-item" key={i}><time>{s.time}</time><div className="dot"/><div><h3>{s.event}</h3><p>{s.detail}</p></div></div>)}</div></section>
  </div><div style={{display:page==='qa'?'block':'none'}}><section className="section qa wix-page" id="qa"><div className="eyebrow">WEDDING INFORMATION</div><h2>Q & A</h2><div className="flourish">❦</div><div className="wix-qa-list">{[
 ['Can I bring a plus one?','Please confirm the number of invited guests with the couple.'],
