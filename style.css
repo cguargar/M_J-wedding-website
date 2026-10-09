@@ -356,3 +356,26 @@ footer small,footer .flourish{color:var(--champagne)!important}
 .wedding-guideline p{font:400 clamp(17px,2vw,22px)/1.65 'Cormorant Garamond',Georgia,serif;color:#e7ddcf}
 .wedding-guideline p strong{font-weight:700}
 @media(max-width:680px){.attire-reference-layout,.wedding-guidelines{grid-template-columns:1fr}.attire-reference-photo{max-width:480px;margin:auto}.wedding-guidelines{gap:60px}.guideline-icon{height:65px;font-size:52px}}
+
+/* Official wedding palette: sage green, burnt orange and burgundy */
+:root {
+  --wedding-sage: #8b9f74;
+  --wedding-orange: #df5524;
+  --wedding-burgundy: #94002c;
+  --wedding-champagne: #c8a66c;
+}
+/* Keep the invitation's black base and champagne lettering. */
+.attire-reference-info .attire-palette span:nth-child(1) { background: var(--wedding-sage) !important; }
+.attire-reference-info .attire-palette span:nth-child(2) { background: var(--wedding-orange) !important; }
+.attire-reference-info .attire-palette span:nth-child(3) { background: var(--wedding-burgundy) !important; }
+.attire-reference-info .attire-palette span { transition: transform .25s ease, box-shadow .25s ease; }
+.attire-reference-info .attire-palette span:hover { transform: translateY(-5px) scale(1.08); box-shadow: 0 0 0 2px var(--wedding-champagne); }
+/* Three-color detailing on the invitation and section headings. */
+.luxe-divider::before { background: linear-gradient(90deg,transparent,var(--wedding-sage),var(--wedding-champagne)) !important; }
+.luxe-divider::after { background: linear-gradient(90deg,transparent,var(--wedding-burgundy),var(--wedding-orange)) !important; }
+.attire-section { border-top: 3px solid var(--wedding-sage); }
+.wedding-guidelines { border-top: 2px solid var(--wedding-burgundy); }
+.accommodation-section { border-top: 2px solid var(--wedding-orange); }
+.luxe-rsvp:hover, .accommodation-link:hover { background: var(--wedding-burgundy) !important; color: #fff5e6 !important; border-color: var(--wedding-burgundy) !important; }
+.luxe-rsvp:focus-visible, .accommodation-link:focus-visible { outline: 2px solid var(--wedding-sage); outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) { .attire-reference-info .attire-palette span { transition: none; } }
