@@ -339,3 +339,20 @@ footer small,footer .flourish{color:var(--champagne)!important}
 .accommodation-link{display:inline-block;border:1px solid #c8a66c;padding:15px 25px;margin:8px auto 18px;color:#e9d5b1;text-decoration:none;font-size:12px;letter-spacing:.15em;transition:background .2s,color .2s}
 .accommodation-link:hover{background:#c8a66c;color:#090808}
 @media(max-width:560px){.attire-grid{grid-template-columns:1fr;max-width:350px}.attire-card{padding:24px 12px}}
+
+
+/* Reference-matched dress code, color palette, and guest reminders */
+.attire-reference-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:clamp(18px,5vw,55px);max-width:1020px;margin:30px auto}
+.attire-reference-photo{display:block;width:100%;height:auto;object-fit:contain;border-radius:3px}
+.attire-reference-info p{font:400 clamp(19px,2.6vw,27px)/1.4 'Cormorant Garamond',Georgia,serif;color:#f3e6d5;margin:14px auto 24px}
+.attire-reference-info strong{font-weight:600}
+.attire-reference-info .details-feature-note{font-style:italic;font-size:clamp(18px,2.3vw,24px);color:#d6bd95;max-width:410px}
+.attire-reference-info .attire-palette{gap:14px;margin:28px auto 16px}
+.attire-reference-info .attire-palette span{width:clamp(46px,7vw,67px);border:0;box-shadow:0 0 0 1px #e4d4b344}
+.wedding-guidelines{background:#0a0908;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,6vw,75px);border-top:1px solid #b69a6d44}
+.wedding-guideline{text-align:center;max-width:450px;margin:0 auto}
+.guideline-icon{height:90px;display:grid;place-items:center;font-size:64px;line-height:1;color:#d1ad74}
+.wedding-guideline h2{font:600 clamp(35px,4vw,52px) 'Cormorant Garamond',Georgia,serif;color:#ead1a5;margin:12px 0}
+.wedding-guideline p{font:400 clamp(17px,2vw,22px)/1.65 'Cormorant Garamond',Georgia,serif;color:#e7ddcf}
+.wedding-guideline p strong{font-weight:700}
+@media(max-width:680px){.attire-reference-layout,.wedding-guidelines{grid-template-columns:1fr}.attire-reference-photo{max-width:480px;margin:auto}.wedding-guidelines{gap:60px}.guideline-icon{height:65px;font-size:52px}}
