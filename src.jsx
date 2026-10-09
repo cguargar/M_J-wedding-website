@@ -13,7 +13,7 @@ function App(){
  async function toggleMusic(){if(!audio.current)return;try{if(music){audio.current.pause();setMusic(false)}else{await audio.current.play();setMusic(true)}}catch{setStatus('Add public/music.mp3 to enable music.')}}
  async function submit(e){e.preventDefault();setSending(true);setStatus('');try{const res=await fetch('/api/rsvp',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(form)});const data=await res.json();if(!res.ok)throw Error(data.error||'Unable to submit RSVP');setStatus('Thank you! Your RSVP has been received.');setForm({name:'',mobile:'',attendance:'yes',guests:'1',dietary:'',message:''})}catch(err){setStatus(err.message)}finally{setSending(false)}}
  function openGuestRSVP(e){e.preventDefault();if(!guestName.trim()){setNameError('Please enter your name.');return;}setForm(f=>({...f,name:guestName.trim()}));setNameError('');setFindGuest(false);window.location.hash='rsvp';}
- const nav=[['Our Wedding','#home'],['Entourage','#entourage'],['RSVP','#rsvp'],['Details','#details'],['Q & A','#qa'],['Gallery','#gallery']];
+ const nav=[['Entourage','#entourage'],['RSVP','#rsvp'],['Details','#details'],['Q & A','#qa'],['Gallery','#gallery']];
   const weddingDate = new Date(w.dateISO);
   const dateParts = { weekday: new Intl.DateTimeFormat('en-US',{weekday:'long',timeZone:'UTC'}).format(new Date(w.dateISO.slice(0,10)+'T12:00:00Z')), month: new Intl.DateTimeFormat('en-US',{month:'long',timeZone:'UTC'}).format(new Date(w.dateISO.slice(0,10)+'T12:00:00Z')), day: w.dateISO.slice(8,10), year: w.dateISO.slice(0,4) };
   const parentNames = [['JESUS FRANCO','LEONILA FRANCO'],['OWEN GUARIN','GLORIA GUARIN']];
