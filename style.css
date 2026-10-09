@@ -306,3 +306,18 @@ footer small,footer .flourish{color:var(--champagne)!important}
 .guest-close{position:absolute;right:14px;top:10px;color:#d9c5a4;border:0;background:transparent;font-size:27px;cursor:pointer;z-index:1}
 @keyframes modal-fade{from{opacity:0}to{opacity:1}}
 @media(prefers-reduced-motion:reduce){.luxe-paper,.luxe-paper .luxe-names,.luxe-paper .luxe-countdown,.luxe-paper .luxe-venues,.guest-modal-backdrop{animation:none}}
+
+/* Distinct opening invitation at /, with original wedding page at #home */
+.landing-shell{min-height:100svh;background:#050505;color:#fff}
+.landing-cover{position:relative;min-height:100svh;width:100%;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.landing-scroll{min-height:100svh;background:#050505;display:flex;justify-content:center;animation:landingFade .85s ease both}
+.landing-card{position:relative;isolation:isolate;overflow:hidden;width:min(100%,720px);min-height:100svh;display:flex;flex-direction:column;align-items:center;text-align:center;padding:70px clamp(28px,7vw,75px) 85px;background:radial-gradient(ellipse at 25% 20%,#30272080,transparent 45%),repeating-linear-gradient(125deg,transparent 0 72px,#c9a66c08 73px,transparent 76px),linear-gradient(145deg,#171310,#080808 60%,#1b1510);border-left:1px solid #86683d;border-right:1px solid #86683d}
+.landing-card::before,.landing-card::after{content:'';position:absolute;top:0;bottom:0;width:9px;background:linear-gradient(90deg,#7a562e,#e4c68c,#97703c);filter:drop-shadow(0 0 9px #b28b5488);pointer-events:none}
+.landing-card::before{left:0;clip-path:polygon(0 0,100% 0,25% 18%,100% 33%,20% 48%,100% 67%,15% 85%,100% 100%,0 100%)}
+.landing-card::after{right:0;clip-path:polygon(100% 0,0 0,80% 20%,0 35%,90% 50%,0 70%,80% 85%,0 100%,100% 100%)}
+.landing-card .luxe-venues{margin-bottom:45px}
+.landing-card .luxe-rsvp{cursor:pointer;background:transparent}
+.landing-enter{font:500 11px Montserrat,sans-serif;letter-spacing:.19em;color:#d8b780;text-decoration:none;margin-top:32px;padding:14px 10px;border-bottom:1px solid #9c7b4d;transition:transform .2s}
+.landing-enter:hover{transform:translateY(3px)}
+@keyframes landingFade{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.landing-scroll{animation:none}}
