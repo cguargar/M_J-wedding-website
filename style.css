@@ -215,3 +215,21 @@ footer{background:#050505!important;border-top:1px solid #846b46!important;color
 footer small,footer .flourish{color:var(--champagne)!important}
 .music{background:#181512!important;color:var(--champagne)!important;border-color:var(--champagne)!important}
 @media(max-width:700px){.wix-page::before,.wix-page::after,.invitation-paper::before,.invitation-paper::after{font-size:78px;opacity:.15}.wix-page::before,.invitation-paper::before{left:0}.wix-page::after,.invitation-paper::after{right:0}.wix-entourage-list{padding:22px 0}}
+
+/* Interactive wedding invitation cover */
+.invitation-cover{position:fixed;inset:0;z-index:1000;width:100%;height:100dvh;overflow:hidden;border:0;border-radius:0;margin:0;padding:clamp(30px,6vw,75px) 20px;background:radial-gradient(ellipse at 50% 40%,#1b1917 0%,#080808 75%);color:#f7f0e6;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(20px,4vh,35px);text-align:center;cursor:pointer;font-family:'Cormorant Garamond',Georgia,serif;isolation:isolate}
+.invitation-cover::before{content:'';position:absolute;inset:20px;border:1px solid rgba(201,172,123,.55);pointer-events:none}
+.invitation-cover::after{content:'';position:absolute;inset:29px;border:1px solid rgba(201,172,123,.18);pointer-events:none}
+.cover-corner{position:absolute;color:#c9ac7b;font-size:clamp(90px,20vw,210px);opacity:.26;line-height:1;pointer-events:none}
+.cover-corner-tl{top:15px;left:15px;transform:rotate(-30deg)}
+.cover-corner-br{bottom:15px;right:15px;transform:rotate(150deg)}
+.cover-overline{font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:.35em;color:#c9ac7b}
+.cover-names{font-size:clamp(54px,10vw,115px);line-height:.95;font-weight:400;max-width:950px;display:flex;flex-direction:column;align-items:center;gap:10px;text-wrap:balance}
+.cover-names em{font-size:.5em;color:#c9ac7b;font-weight:400}
+.cover-date{font-family:'DM Sans',sans-serif;font-size:clamp(12px,2vw,16px);letter-spacing:.24em;text-transform:uppercase;color:#e9d9bd}
+.cover-open{position:absolute;bottom:clamp(65px,10vh,115px);font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:.3em;color:#c9ac7b;animation:cover-pulse 2s ease-in-out infinite}
+.cover-open span{display:block;font-size:22px;margin-top:12px}
+.invitation-cover:focus-visible{outline:3px solid #e5c58e;outline-offset:-12px}
+@keyframes cover-pulse{0%,100%{opacity:.65;transform:translateY(0)}50%{opacity:1;transform:translateY(-5px)}}
+@media(max-width:700px){.invitation-cover::before{inset:12px}.invitation-cover::after{inset:19px}.cover-corner{font-size:90px}.cover-names{font-size:clamp(47px,13vw,78px)}.cover-overline{font-size:9px}.cover-date{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.cover-open{animation:none}}
