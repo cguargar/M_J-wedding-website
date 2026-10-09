@@ -321,3 +321,21 @@ footer small,footer .flourish{color:var(--champagne)!important}
 .landing-enter:hover{transform:translateY(3px)}
 @keyframes landingFade{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){.landing-scroll{animation:none}}
+
+/* Details: attire and accommodation */
+.attire-section,.accommodation-section{background:#0a0908;text-align:center;color:#eee5d8;border-top:1px solid rgba(197,163,105,.24)}
+.attire-section h2,.accommodation-section h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;color:#e9d5b1;font-size:clamp(42px,7vw,68px);margin:8px 0 4px}
+.attire-section .flourish,.accommodation-section .flourish{color:#c8a66c;font-size:27px;margin:12px 0 26px}
+.details-feature-subtitle{color:#d8bd90;letter-spacing:.23em;font-size:12px;font-weight:600;margin:12px auto 24px}
+.attire-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;max-width:760px;margin:20px auto 26px}
+.attire-card{border:1px solid rgba(201,169,115,.55);padding:35px 15px;background:linear-gradient(135deg,#15120f,#0b0a09)}
+.attire-symbol{font-size:27px;color:#c8a66c}
+.attire-card h3{font:400 33px 'Cormorant Garamond',Georgia,serif;color:#f0e1c9;margin:10px 0}
+.attire-card p{color:#dfc9a7;font-size:14px;margin:0}
+.details-feature-note{max-width:660px;margin:15px auto 25px;line-height:1.85;color:#dfd1bd}
+.attire-palette{display:flex;justify-content:center;gap:12px;margin:26px auto 15px}
+.attire-palette span{display:block;width:clamp(34px,8vw,58px);aspect-ratio:1;border-radius:50%;border:2px solid rgba(224,202,160,.45)}
+.details-palette-caption{font-size:12px;line-height:1.7;color:#b7a58b;max-width:610px;margin:14px auto 0}
+.accommodation-link{display:inline-block;border:1px solid #c8a66c;padding:15px 25px;margin:8px auto 18px;color:#e9d5b1;text-decoration:none;font-size:12px;letter-spacing:.15em;transition:background .2s,color .2s}
+.accommodation-link:hover{background:#c8a66c;color:#090808}
+@media(max-width:560px){.attire-grid{grid-template-columns:1fr;max-width:350px}.attire-card{padding:24px 12px}}
