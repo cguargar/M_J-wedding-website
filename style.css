@@ -155,3 +155,63 @@ footer .flourish,footer small{color:#c6a775}
 .wix-qa-item p{font-size:15px;line-height:1.8;color:#4b453e;margin:0}
 .wix-page.gallery .photos{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1000px}
 @media(max-width:700px){.wix-page{padding-top:100px}.wix-entourage-list{grid-template-columns:1fr;gap:25px}.wix-page.gallery .photos{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* BLACK & CHAMPAGNE FLORAL THEME — append to existing style.css */
+:root{--night:#090909;--panel:#151414;--champagne:#c7aa7a;--champagne-soft:#e0cda9;--ivory:#f6f0e7;--muted:#c1b5a5;color:var(--ivory);background:var(--night);color-scheme:dark}
+html,body,#root,main,.wix-pages{background:var(--night)!important;color:var(--ivory)!important}
+.nav,.nav nav,.nav nav.open{background:#070707!important;border-bottom:1px solid #5b4b32}
+.nav a,.nav nav a,.nav .menu{color:var(--ivory)!important}
+.nav .monogram,.nav a:hover,.nav nav a:hover{color:var(--champagne)!important}
+/* Every page gets the same black invitation-paper finish. */
+main .section,main .section:not(.rsvp),main .countdown,main .timeline,main .rsvp,.wix-page,.wix-pages,.entourage,.qa,.invitation-hero,.hero{background:var(--night)!important;color:var(--ivory)!important}
+main .section:not(.rsvp){background-image:radial-gradient(ellipse at 50% 0%,#24201b 0%,#11100f 40%,#090909 80%)!important}
+.wix-page,.invitation-hero{background-image:radial-gradient(ellipse at 50% 15%,#211d17 0%,#0c0b0a 65%)!important}
+main .section,.wix-page{border-top:1px solid #4e402d!important}
+/* Subtle floral corner details: decorative only, never block clicks. */
+.wix-page,.invitation-paper,.rsvp-panel{position:relative;isolation:isolate}
+.wix-page::before,.wix-page::after,.invitation-paper::before,.invitation-paper::after{position:absolute;z-index:-1;pointer-events:none;color:var(--champagne);opacity:.27;font-family:Georgia,serif;font-size:clamp(85px,13vw,190px);line-height:1;content:'❦'}
+.wix-page::before,.invitation-paper::before{top:80px;left:3%;transform:rotate(-35deg)}
+.wix-page::after,.invitation-paper::after{bottom:25px;right:3%;transform:rotate(145deg)}
+/* Invitation cover */
+.invitation-paper,.hero-border{background:transparent!important;color:var(--ivory)!important;border-color:var(--champagne)!important}
+.invitation-hero .invitation-paper{box-shadow:inset 0 0 0 1px #6e5938}
+.invitation-overline,.invitation-parents,.invitation-we,.invitation-request,.invitation-weekday,.invitation-date,.invitation-date>p,.invitation-location,.invitation-explore,.hero-date,.hero-bottom{color:var(--ivory)!important}
+.invitation-names,.hero h1,.hero h1 span{color:var(--ivory)!important}
+.invitation-floral,.invitation-floral span,.ornament,.flourish,.heart,.invitation-date-row strong{color:var(--champagne)!important}
+.invitation-date-row span{color:var(--ivory)!important;border-color:#8a714d!important}
+/* Page headings and copy */
+main .section h2,main .section h3,.wix-entourage-group h3,.wix-qa-item h3,.rsvp-panel h2,.timeline-item h3,.digits strong{color:var(--ivory)!important}
+main .section p,main .intro p,main .section .section-lead,.wix-entourage-group p,.wix-qa-item p,.timeline-item p,.rsvp-panel>p,.photo-note{color:var(--muted)!important}
+main .section .eyebrow,.eyebrow,.wix-page .eyebrow,.timeline-item time,.digits small,.text-link{color:var(--champagne)!important}
+main .section:not(.rsvp)::before{color:var(--champagne)!important;opacity:.85}
+/* Entourage and Q&A */
+.wix-entourage-list{border-top:1px solid #6c5739;border-bottom:1px solid #6c5739;padding:36px 0}
+.wix-entourage-group{padding:12px 16px}
+.wix-entourage-group h3{color:var(--champagne-soft)!important}
+.wix-qa-item{border-color:#6c5739!important}
+.wix-qa-item h3{color:var(--champagne-soft)!important}
+.entourage-card,.venue,.rsvp-panel{background:#171513!important;border:1px solid #846b46!important;box-shadow:0 12px 35px #0006!important}
+.entourage-card h3,.venue strong{color:var(--ivory)!important}
+.entourage-card p,.venue p,.entourage-note{color:var(--muted)!important}
+.qa-list details{border-color:#6c5739!important}
+.qa-list summary{color:var(--ivory)!important}
+.qa-list p{color:var(--muted)!important}
+/* Gallery and countdown */
+.photo{background:#201b16!important;border:1px solid #846b46!important}
+.photo:before{color:var(--champagne)!important}
+.photo img{filter:none!important}
+.photo span{color:white!important}
+.digits strong{color:var(--ivory)!important}
+.timeline-item .dot{background:var(--champagne)!important}
+.timeline-item:not(:last-child) .dot:after{background:#7d6646!important}
+/* RSVP remains fully functional and readable. */
+.rsvp label{color:var(--champagne-soft)!important}
+.rsvp input,.rsvp select,.rsvp textarea{background:#0d0c0b!important;color:var(--ivory)!important;border:1px solid #786343!important;color-scheme:dark!important}
+.rsvp input::placeholder,.rsvp textarea::placeholder{color:#b0a69a!important}
+.rsvp input:focus,.rsvp select:focus,.rsvp textarea:focus{outline:2px solid var(--champagne)!important;outline-offset:2px}
+main .btn.gold,.btn.gold{background:var(--champagne)!important;color:#0a0908!important;border:1px solid var(--champagne-soft)!important}
+main .btn.gold:hover,.btn.gold:hover{background:var(--champagne-soft)!important}
+.form-status{color:var(--ivory)!important}
+footer{background:#050505!important;border-top:1px solid #846b46!important;color:var(--ivory)!important}
+footer small,footer .flourish{color:var(--champagne)!important}
+.music{background:#181512!important;color:var(--champagne)!important;border-color:var(--champagne)!important}
+@media(max-width:700px){.wix-page::before,.wix-page::after,.invitation-paper::before,.invitation-paper::after{font-size:78px;opacity:.15}.wix-page::before,.invitation-paper::before{left:0}.wix-page::after,.invitation-paper::after{right:0}.wix-entourage-list{padding:22px 0}}
